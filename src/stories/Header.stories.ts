@@ -1,3 +1,4 @@
+import { ButtonModule } from 'primeng/button';
 import { moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
@@ -7,12 +8,12 @@ import Button from './button.component';
 import Header from './header.component';
 
 export default {
-  title: 'Example/Header',
+  title: 'Components/Header',
   component: Header,
   decorators: [
     moduleMetadata({
       declarations: [Button],
-      imports: [CommonModule],
+      imports: [CommonModule,ButtonModule],
     }),
   ],
 } as Meta;

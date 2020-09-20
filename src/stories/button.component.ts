@@ -9,7 +9,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     [ngStyle]="{ 'background-color': backgroundColor }"
   >
     {{ label }}
-  </button>`,
+  </button>
+
+
+  `,
   styleUrls: ['./button.css'],
 })
 export default class ButtonComponent {

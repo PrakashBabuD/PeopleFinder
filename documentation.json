@@ -1,6 +1,145 @@
 {
     "pipes": [],
-    "interfaces": [],
+    "interfaces": [
+        {
+            "name": "IComment",
+            "id": "interface-IComment-b75e514c818a478ffe3d57ea33320fc7",
+            "file": "src/stories/comment.ts",
+            "type": "interface",
+            "sourceCode": "export interface IComment{\r\nCountry:String\r\nBrand:String\r\nRegion:String\r\nOffice:String\r\nCommentType:String\r\nEntityName:String\r\nEntityNumber:String\r\nCommentDate:any\r\nClientName:String\r\nClientNo:String\r\nCandidateName:String\r\nCandidateNo:String\r\nContactName:String\r\nCreateDate:any\r\nCommentTime:any\r\nCreatedBy:String\r\nStandardDescription:String\r\nComment:String\r\n}\r\n\r\nlet columns=[\r\n\"Country\",\r\n\"Brand\",\r\n\"Region\",\r\n\"Office\",\r\n\"CommentType\",\r\n\"EntityName\",\r\n\"EntityNumber\",\r\n\"CommentDate\",\r\n\"ClientName\",\r\n\"ClientNo\",\r\n\"CandidateName\",\r\n\"CandidateNo\",\r\n\"ContactName\",\r\n\"CreateDate\",\r\n\"CommentTime\",\r\n\"CreatedBy\",\r\n\"StandardDescription\",\r\n\"Comment\"];\r\n",
+            "properties": [
+                {
+                    "name": "Brand",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "CandidateName",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "CandidateNo",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "ClientName",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "ClientNo",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "Comment",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "CommentDate",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "CommentTime",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "CommentType",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "ContactName",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "Country",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "CreateDate",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "CreatedBy",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "EntityName",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "EntityNumber",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "Office",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "Region",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "StandardDescription",
+                    "type": "String",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        }
+    ],
     "injectables": [],
     "classes": [
         {
@@ -86,7 +225,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-642c6c4e474cd5a0ac760dfda26b2fc9",
+            "id": "component-ButtonComponent-8c23183f5afc4334cf4a2c1d76b8b253",
             "file": "src/stories/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -98,33 +237,33 @@
                 "./button.css"
             ],
             "styles": [],
-            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>\n\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
                 {
                     "name": "backgroundColor",
                     "description": "<p>What background color to use</p>\n",
-                    "line": 26,
+                    "line": 29,
                     "type": "string"
                 },
                 {
                     "name": "label",
                     "defaultValue": "'Button'",
                     "description": "<p>Button contents</p>\n",
-                    "line": 40
+                    "line": 43
                 },
                 {
                     "name": "primary",
                     "defaultValue": "false",
                     "description": "<p>Is this the principal call to action on the page?</p>\n",
-                    "line": 20
+                    "line": 23
                 },
                 {
                     "name": "size",
                     "defaultValue": "'medium'",
                     "description": "<p>How large should the button be?</p>\n",
-                    "line": 32,
+                    "line": 35,
                     "type": "\"small\" | \"medium\" | \"large\""
                 }
             ],
@@ -133,7 +272,7 @@
                     "name": "onClick",
                     "defaultValue": "new EventEmitter<Event>()",
                     "description": "<p>Optional click handler</p>\n",
-                    "line": 46,
+                    "line": 49,
                     "type": "EventEmitter"
                 }
             ],
@@ -144,7 +283,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>\n\n\n  `,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -160,14 +299,328 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 48
+                        "line": 51
                     }
                 }
             }
         },
         {
+            "name": "CommentsListComponent",
+            "id": "component-CommentsListComponent-d249f8a11529981a1c2e0e93b24f4ef5",
+            "file": "src/stories/comments-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "MessageService"
+                }
+            ],
+            "selector": "comments-list",
+            "styleUrls": [
+                "./comment-list.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./comments-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "brand",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "columnOptions",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "columns",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "comments",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "commentType",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "countries",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "loading",
+                    "defaultValue": "true",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                },
+                {
+                    "name": "office",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "region",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "representatives",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "selectedCols",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "standardDescriptions",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "statuses",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                },
+                {
+                    "name": "table",
+                    "type": "Table",
+                    "optional": false,
+                    "description": "",
+                    "line": 35,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'dt'"
+                        }
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "formatDate",
+                    "args": [
+                        {
+                            "name": "date",
+                            "type": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 170,
+                    "jsdoctags": [
+                        {
+                            "name": "date",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "isColumnShown",
+                    "args": [
+                        {
+                            "name": "name",
+                            "type": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 135,
+                    "jsdoctags": [
+                        {
+                            "name": "name",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39
+                },
+                {
+                    "name": "onActivityChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 155,
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onDateSelect",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 166,
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onMultiSelectChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": ""
+                        },
+                        {
+                            "name": "field",
+                            "type": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 185,
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "field",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "populateSelectedColumns",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 139
+                },
+                {
+                    "name": "selectedChanged",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 147,
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, ViewChild } from '@angular/core';\r\nimport { IComment } from './comment';\r\nimport { Table } from 'primeng/table';\r\nimport { PrimeNGConfig } from 'primeng/api';\r\nimport { MessageService } from 'primeng/api';\r\nimport { FilterUtils } from 'primeng/utils';\r\nimport { SelectItem } from 'primeng/api';\r\nimport { COMMENTS } from './comments-data';\r\nimport { cpuUsage } from 'process';\r\n\r\n@Component({\r\n  selector: 'comments-list',\r\n  templateUrl: './comments-list.component.html',\r\n  styleUrls:[\"./comment-list.component.css\"],\r\n  providers: [MessageService],\r\n})\r\nexport class CommentsListComponent {\r\n  comments: any;\r\n  columns: any[];\r\n  columnOptions: any[];\r\n  selectedCols;\r\n\r\n  representatives: any[];\r\n  countries: any[];\r\n  brand: any[];\r\n  region: any[];\r\n  office: any[];\r\n  commentType: any[];\r\n  standardDescriptions: any[];\r\n\r\n  statuses: any[];\r\n\r\n  loading: boolean = true;\r\n\r\n  @ViewChild('dt') table: Table;\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit() {\r\n    // this.customerService.getCustomersLarge().then(customers => {\r\n    //     this.customers = customers;\r\n    //     this.loading = false;\r\n    // });\r\n    this.comments = COMMENTS;\r\n    this.loading = false;\r\n    this.columns = [\r\n      { hide: true, field: 'Country', header: 'Country' },\r\n      { hide: true, field: 'Brand', header: 'Brand' },\r\n      { hide: true, field: 'Region', header: 'Region' },\r\n      { hide: false, field: 'Office', header: 'Office' },\r\n      { hide: false, field: 'CommentType', header: 'CommentType' },\r\n      { hide: false, field: 'EntityName', header: 'EntityName' },\r\n      { hide: false, field: 'EntityNumber', header: 'EntityNumber' },\r\n      { hide: false, field: 'CommentDate', header: 'CommentDate' },\r\n      { hide: true, field: 'ClientName', header: 'ClientName' },\r\n      { hide: true, field: 'ClientNo', header: 'ClientNo' },\r\n      { hide: true, field: 'CandidateName', header: 'CandidateName' },\r\n      { hide: true, field: 'CandidateNo', header: 'CandidateNo' },\r\n      { hide: true, field: 'ContactName', header: 'ContactName' },\r\n      { hide: true, field: 'CreateDate', header: 'CreateDate' },\r\n      { hide: false, field: 'CommentTime', header: 'CommentTime' },\r\n      { hide: true, field: 'CreatedBy', header: 'CreatedBy' },\r\n      {\r\n        hide: false,\r\n        field: 'StandardDescription',\r\n        header: 'StandardDescription',\r\n      },\r\n      { hide: true, field: 'Comment', header: 'Comment' },\r\n    ];\r\n\r\n    this.columnOptions = this.columns.map((col) => {\r\n      return { name: col.header, code: col.field };\r\n    });\r\n    this.populateSelectedColumns();\r\n\r\n    this.representatives = [\r\n      { name: 'Amy Elsner', image: 'amyelsner.png' },\r\n      { name: 'Anna Fali', image: 'annafali.png' },\r\n      { name: 'Asiya Javayant', image: 'asiyajavayant.png' },\r\n      { name: 'Bernardo Dominic', image: 'bernardodominic.png' },\r\n      { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },\r\n      { name: 'Ioni Bowcher', image: 'ionibowcher.png' },\r\n      { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },\r\n      { name: 'Onyama Limba', image: 'onyamalimba.png' },\r\n      { name: 'Stephen Shaw', image: 'stephenshaw.png' },\r\n      { name: 'XuXue Feng', image: 'xuxuefeng.png' },\r\n    ];\r\n\r\n    this.statuses = [\r\n      { label: 'Unqualified', value: 'unqualified' },\r\n      { label: 'Qualified', value: 'qualified' },\r\n      { label: 'New', value: 'new' },\r\n      { label: 'Negotiation', value: 'negotiation' },\r\n      { label: 'Renewal', value: 'renewal' },\r\n      { label: 'Proposal', value: 'proposal' },\r\n    ];\r\n\r\n    this.countries = [\r\n      { label: 'Australia', value: 'Australia' },\r\n      { label: 'New Zealand', value: 'New Zealand' },\r\n      { label: 'Singapore', value: 'Singapore' },\r\n    ];\r\n\r\n    this.brand = [\r\n      { label: 'IT', value: 'IT' },\r\n      { label: 'Industrial', value: 'Industrial' },\r\n      { label: 'Logistics', value: 'Logistics' },\r\n    ];\r\n    this.region = [\r\n      { label: 'North', value: 'North' },\r\n      { label: 'South', value: 'South' },\r\n      { label: 'East', value: 'East' },\r\n      { label: 'West', value: 'West' },\r\n    ];\r\n    this.office = [\r\n      { label: 'Melbourne', value: 'Melbourne' },\r\n      { label: 'Auckland', value: 'Auckland' },\r\n      { label: 'Singapore', value: 'Singapore' },\r\n    ];\r\n    this.commentType = [\r\n      { label: 'Client', value: 'Client' },\r\n      { label: 'Client Contact', value: 'Client Contact' },\r\n      { label: 'Cost Centre', value: 'Cost Centre' },\r\n      { label: 'Job Order', value: 'Job Order' },\r\n      { label: 'Candidate', value: 'Candidate' },\r\n      { label: 'Timesheet', value: 'Timesheet' },\r\n    ];\r\n    this.standardDescriptions = [\r\n      { label: 'Complaint,', value: 'Complaint,' },\r\n      { label: 'Call Outcome', value: 'Call Outcome' },\r\n      { label: 'Sales Call', value: 'Sales Call' },\r\n      { label: 'Job Extension', value: 'Job Extension' },\r\n    ];\r\n  }\r\n  isColumnShown(name) {\r\n    let selectedColumnCodes = this.selectedCols.map((col) => col.code);\r\n    return selectedColumnCodes.indexOf(name) > -1;\r\n  }\r\n  populateSelectedColumns() {\r\n    this.selectedCols = this.columns\r\n      .filter((col) => !col.hide)\r\n      .map((col) => {\r\n        return { name: col.header, code: col.field };\r\n      });\r\n  }\r\n\r\n  selectedChanged(event) {\r\n    let selectedColumnCodes = this.selectedCols.map((col) => col.code);\r\n    console.log(this.selectedCols);\r\n    this.columns = this.columns.map((column) => {\r\n      return { ...column, hide: selectedColumnCodes.indexOf(column.field) < 0 };\r\n    });\r\n  }\r\n\r\n  onActivityChange(event) {\r\n    const value = event.target.value;\r\n    if (value && value.trim().length) {\r\n      const activity = parseInt(value);\r\n\r\n      if (!isNaN(activity)) {\r\n        this.table.filter(activity, 'activity', 'gte');\r\n      }\r\n    }\r\n  }\r\n\r\n  onDateSelect(value) {\r\n    this.table.filter(this.formatDate(value), 'date', 'equals');\r\n  }\r\n\r\n  formatDate(date) {\r\n    let month = date.getMonth() + 1;\r\n    let day = date.getDate();\r\n\r\n    if (month < 10) {\r\n      month = '0' + month;\r\n    }\r\n\r\n    if (day < 10) {\r\n      day = '0' + day;\r\n    }\r\n\r\n    return date.getFullYear() + '-' + month + '-' + day;\r\n  }\r\n\r\n  onMultiSelectChange(event,field) {\r\n    let seachValue;\r\n    seachValue = event.value.map( v=> v.value);\r\n    console.log(\"onMultiSelectChange\",event);\r\n    console.log(\"onMultiSelectChange field\",field);\r\n\r\n    this.table.filter(seachValue, field, 'in');\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".table-header{\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n",
+                    "styleUrl": "./comment-list.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 35
+            },
+            "templateData": "<p-table\r\n  #dt\r\n  [value]=\"comments\"\r\n  dataKey=\"Id\"\r\n  [rows]=\"10\"\r\n  [showCurrentPageReport]=\"true\"\r\n  [rowsPerPageOptions]=\"[10, 25, 50]\"\r\n  [loading]=\"loading\"\r\n  styleClass=\"p-datatable-customers\"\r\n  [paginator]=\"true\"\r\n  currentPageReportTemplate=\"Showing {first} to {last} of {totalRecords} entries\"\r\n  [filterDelay]=\"0\"\r\n  [globalFilterFields]=\"[\r\n    'name',\r\n    'country.name',\r\n    'representative.name',\r\n    'status'\r\n  ]\"\r\n>\r\n  <ng-template pTemplate=\"caption\">\r\n    <div class=\"p-d-flex\">\r\n      <button type=\"button\" pButton pRipple icon=\"pi pi-file-o\" (click)=\"dt.exportCSV()\" class=\"p-mr-2\" pTooltip=\"CSV\" tooltipPosition=\"bottom\"></button>\r\n      <div class=\"p-as-stretch\"></div>\r\n      <button pButton type=\"button\" icon=\"p-ml-auto pi pi-table\" iconPos=\"left\"></button>\r\n      <!-- <i class=\"pi pi-table  p-ml-auto\"  (click)=\"colSelections.toggle($event);\" ></i> -->\r\n      <p-overlayPanel styleClass=\"sidebar-popup-sub-menu\" #colSelections [dismissable]=\"true\" [showCloseIcon]=\"true\"\r\n      appendTo=\"body\">\r\n      <p-listbox [listStyle]=\"{'max-height':'250px'}\" [style]=\"{'width':'15rem'}\" [options]=\"columnOptions\" [(ngModel)]=\"selectedCols\" (onChange)=\"selectedChanged($event)\"\r\n        multiple=\"multiple\" checkbox=\"checkbox\" filter=\"filter\" optionLabel=\"name\">\r\n        <p-header>\r\n          Select Columns\r\n        </p-header>\r\n      </p-listbox>\r\n\r\n    </p-overlayPanel>\r\n  </div>\r\n    <div class=\"table-header\">\r\n\r\n\r\n\r\n    </div>\r\n  </ng-template>\r\n  <ng-template pTemplate=\"header\">\r\n    <tr>\r\n      <ng-container *ngFor=\"let col of columns\">\r\n        <th [hidden]=\"col.hide\"> {{col.header}} </th>\r\n      </ng-container>\r\n    </tr>\r\n\r\n\r\n    <tr>\r\n<th *ngIf=\"isColumnShown('Country')\">\r\n\r\n  <p-multiSelect [options]=\"countries\" placeholder=\"All\" (onChange)=\"onMultiSelectChange($event,'Country')\" styleClass=\"p-column-filter\" optionLabel=\"label\">\r\n    <ng-template let-option pTemplate=\"item\">\r\n        <div class=\"p-multiselect-representative-option\">\r\n            <span class=\"p-ml-1\">{{option.label}}</span>\r\n        </div>\r\n    </ng-template>\r\n</p-multiSelect>\r\n\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('Brand')\">\r\n      <p-multiSelect [options]=\"brand\" placeholder=\"All\" (onChange)=\"onMultiSelectChange($event,'Brand')\" styleClass=\"p-column-filter\" optionLabel=\"label\">\r\n        <ng-template let-option pTemplate=\"item\">\r\n            <div class=\"p-multiselect-representative-option\">\r\n                <span class=\"p-ml-1\">{{option.label}}</span>\r\n            </div>\r\n        </ng-template>\r\n    </p-multiSelect>\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('Region')\">\r\n      <p-multiSelect [options]=\"region\" placeholder=\"All\" (onChange)=\"onMultiSelectChange($event,'Region')\" styleClass=\"p-column-filter\" optionLabel=\"label\">\r\n        <ng-template let-option pTemplate=\"item\">\r\n            <div class=\"p-multiselect-representative-option\">\r\n                <span class=\"p-ml-1\">{{option.label}}</span>\r\n            </div>\r\n        </ng-template>\r\n    </p-multiSelect>\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('Office')\">\r\n      <p-multiSelect [options]=\"office\" placeholder=\"All\" (onChange)=\"onMultiSelectChange($event,'Office')\" styleClass=\"p-column-filter\" optionLabel=\"label\">\r\n        <ng-template let-option pTemplate=\"item\">\r\n            <div class=\"p-multiselect-representative-option\">\r\n                <span class=\"p-ml-1\">{{option.label}}</span>\r\n            </div>\r\n        </ng-template>\r\n    </p-multiSelect>\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('CommentType')\">\r\n      <p-multiSelect [options]=\"commentType\" placeholder=\"All\" (onChange)=\"onMultiSelectChange($event,'CommentType')\" styleClass=\"p-column-filter\" optionLabel=\"label\">\r\n        <ng-template let-option pTemplate=\"item\">\r\n            <div class=\"p-multiselect-representative-option\">\r\n                <span class=\"p-ml-1\">{{option.label}}</span>\r\n            </div>\r\n        </ng-template>\r\n    </p-multiSelect>\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('EntityName')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'EntityName', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('EntityNumber')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'EntityNumber', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('CommentDate')\">\r\n      <p-calendar selectionMode=\"range\" (onSelect)=\"onDateSelect($event)\" (onClearClick)=\"dt.filter('', 'date', 'equals')\" [showButtonBar]=\"true\" styleClass=\"p-column-filter\" placeholder=\"Comment Date Range\" [readonlyInput]=\"true\" dateFormat=\"yy-mm-dd\"></p-calendar>\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('ClientName')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'ClientName', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('ClientNo')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'ClientNo', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('CandidateName')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'CandidateName', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('CandidateNo')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'CandidateNo', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('ContactName')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'ContactName', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('CreateDate')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'CreateDate', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('CommentTime')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'CommentTime', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('CreatedBy')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'CreatedBy', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('StandardDescription')\">\r\n      <p-multiSelect [options]=\"standardDescriptions\" placeholder=\"All\" (onChange)=\"onMultiSelectChange($event,'StandardDescription')\" styleClass=\"p-column-filter\" optionLabel=\"label\">\r\n        <ng-template let-option pTemplate=\"item\">\r\n            <div class=\"p-multiselect-representative-option\">\r\n                <span class=\"p-ml-1\">{{option.label}}</span>\r\n            </div>\r\n        </ng-template>\r\n    </p-multiSelect>\r\n      </th>\r\n\r\n    <th *ngIf=\"isColumnShown('Comment')\">\r\n        <input\r\n          pInputText\r\n          type=\"text\"\r\n          (input)=\"dt.filter($event.target.value, 'Comment', 'startsWith')\"\r\n          placeholder=\"Search by Name\"\r\n          class=\"p-column-filter\"\r\n        />\r\n      </th>\r\n    </tr>\r\n\r\n  </ng-template>\r\n  <ng-template pTemplate=\"body\" let-comment>\r\n    <tr>\r\n      <ng-container *ngFor=\"let col of columns\">\r\n        <td [hidden]=\"col.hide\"> {{comment[col.field]}} </td>\r\n      </ng-container>\r\n    </tr>\r\n  </ng-template>\r\n  <ng-template pTemplate=\"emptymessage\">\r\n    <tr>\r\n      <td colspan=\"6\">No comments found.</td>\r\n    </tr>\r\n  </ng-template>\r\n</p-table>\r\n"
+        },
+        {
             "name": "HeaderComponent",
-            "id": "component-HeaderComponent-246e2a69dc126a3bd76c6328dd3b93e2",
+            "id": "component-HeaderComponent-569ed736285298431b65fb6a3f695d5c",
             "file": "src/stories/header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -179,14 +632,14 @@
                 "./header.css"
             ],
             "styles": [],
-            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Job Portal</h1>\n\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
                 {
                     "name": "user",
                     "defaultValue": "null",
-                    "line": 53,
+                    "line": 54,
                     "type": "unknown"
                 }
             ],
@@ -194,19 +647,19 @@
                 {
                     "name": "onCreateAccount",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 62,
+                    "line": 63,
                     "type": "EventEmitter"
                 },
                 {
                     "name": "onLogin",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 56,
+                    "line": 57,
                     "type": "EventEmitter"
                 },
                 {
                     "name": "onLogout",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 59,
+                    "line": 60,
                     "type": "EventEmitter"
                 }
             ],
@@ -217,7 +670,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Job Portal</h1>\n\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -229,7 +682,7 @@
         },
         {
             "name": "PageComponent",
-            "id": "component-PageComponent-cca1a8911321fa17756ce90c90de65cc",
+            "id": "component-PageComponent-79a141d6f41f004d3c895b0852d506d2",
             "file": "src/stories/page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -241,14 +694,14 @@
                 "./page.css"
             ],
             "styles": [],
-            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section style=\"width:100%;max-width:100%;padding:24px 20px;\">\n      <h3> Comments List</h3>\n      <comments-list></comments-list>\n\n\n\n    </section>\n  </article>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
                 {
                     "name": "user",
                     "defaultValue": "null",
-                    "line": 66,
+                    "line": 24,
                     "type": "unknown"
                 }
             ],
@@ -256,19 +709,19 @@
                 {
                     "name": "onCreateAccount",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 75,
+                    "line": 33,
                     "type": "EventEmitter"
                 },
                 {
                     "name": "onLogin",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 69,
+                    "line": 27,
                     "type": "EventEmitter"
                 },
                 {
                     "name": "onLogout",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 72,
+                    "line": 30,
                     "type": "EventEmitter"
                 }
             ],
@@ -279,7 +732,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section style=\"width:100%;max-width:100%;padding:24px 20px;\">\n      <h3> Comments List</h3>\n      <comments-list></comments-list>\n\n\n\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -331,6 +784,22 @@
     ],
     "miscellaneous": {
         "variables": [
+            {
+                "name": "columns",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/comment.ts",
+                "type": "[]",
+                "defaultValue": "[\r\n\"Country\",\r\n\"Brand\",\r\n\"Region\",\r\n\"Office\",\r\n\"CommentType\",\r\n\"EntityName\",\r\n\"EntityNumber\",\r\n\"CommentDate\",\r\n\"ClientName\",\r\n\"ClientNo\",\r\n\"CandidateName\",\r\n\"CandidateNo\",\r\n\"ContactName\",\r\n\"CreateDate\",\r\n\"CommentTime\",\r\n\"CreatedBy\",\r\n\"StandardDescription\",\r\n\"Comment\"]"
+            },
+            {
+                "name": "COMMENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/comments-data.ts",
+                "type": "[]",
+                "defaultValue": "[\r\n  {\r\n    \"Id\": \"5f6610c06576178ad5a4bd6a\",\r\n    \"Country\": \"Australia\",\r\n    \"Brand\": \"IT\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Client Contact\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 3943,\r\n    \"CommentDate\": \"2015-11-19T03:35:54 -11:00\",\r\n    \"ClientName\": \"ZIALACTIC\",\r\n    \"ClientNo\": 7772,\r\n    \"CandidateName\": \"Crawford Shepard\",\r\n    \"CandidateNo\": 1428,\r\n    \"ContactName\": \"Gomez Malone\",\r\n    \"CreateDate\": \"2016-12-14T06:21:05 -11:00\",\r\n    \"CommentTime\": \"2014-03-11T10:17:56 -11:00\",\r\n    \"CreatedBy\": \"Kristine Hickman\",\r\n    \"StandardDescription\": \"Job Extension\",\r\n    \"Comment\": \"Nisi est enim laborum ex cupidatat laborum sit occaecat. Ut velit aliqua et irure adipisicing nisi voluptate ad eiusmod. Laboris consectetur culpa duis sint.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00ea2ffc83a8f0d10\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Cost Centre\",\r\n    \"EntityName\": \"green\",\r\n    \"EntityNumber\": 9338,\r\n    \"CommentDate\": \"2014-04-14T06:13:48 -10:00\",\r\n    \"ClientName\": \"SULTRAXIN\",\r\n    \"ClientNo\": 4401,\r\n    \"CandidateName\": \"Alexis Guerrero\",\r\n    \"CandidateNo\": 2955,\r\n    \"ContactName\": \"Booker Buckner\",\r\n    \"CreateDate\": \"2020-05-14T02:27:42 -10:00\",\r\n    \"CommentTime\": \"2014-05-30T04:15:30 -10:00\",\r\n    \"CreatedBy\": \"Corrine Flynn\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Incididunt tempor ea irure culpa sint velit culpa sit occaecat. Excepteur dolore enim est consequat culpa non dolore minim tempor exercitation ea. Aute est occaecat ipsum ex anim adipisicing. Amet ut veniam consectetur elit consectetur aliqua ea non et dolor eiusmod. Adipisicing est et non nulla culpa. Ut sint nostrud nulla ullamco ea. Commodo est do enim incididunt excepteur laborum quis nulla amet.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c077e9263b84ee034f\",\r\n    \"Country\": \"Australia\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Client Contact\",\r\n    \"EntityName\": \"green\",\r\n    \"EntityNumber\": 8995,\r\n    \"CommentDate\": \"2019-02-16T10:55:55 -11:00\",\r\n    \"ClientName\": \"ZOMBOID\",\r\n    \"ClientNo\": 2557,\r\n    \"CandidateName\": \"Short Fields\",\r\n    \"CandidateNo\": 3823,\r\n    \"ContactName\": \"Daisy Sellers\",\r\n    \"CreateDate\": \"2019-04-08T02:42:59 -10:00\",\r\n    \"CommentTime\": \"2017-12-08T02:41:00 -11:00\",\r\n    \"CreatedBy\": \"Ellis May\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Laborum minim dolore duis adipisicing est velit cupidatat laborum commodo in. Amet mollit ad nostrud id velit proident anim laboris veniam. Do in anim esse consectetur nisi magna velit id ipsum ea est voluptate occaecat ex. Duis adipisicing nulla quis consequat Lorem sit ut culpa consectetur fugiat. Nisi minim in reprehenderit culpa elit mollit irure irure ut irure duis eiusmod ex veniam.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c0a0a602994dcbc95c\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Auckland\",\r\n    \"CommentType\": \"Candidate\",\r\n    \"EntityName\": \"green\",\r\n    \"EntityNumber\": 6804,\r\n    \"CommentDate\": \"2019-05-10T04:03:52 -10:00\",\r\n    \"ClientName\": \"INJOY\",\r\n    \"ClientNo\": 1914,\r\n    \"CandidateName\": \"Sheila Edwards\",\r\n    \"CandidateNo\": 8398,\r\n    \"ContactName\": \"Cruz Byrd\",\r\n    \"CreateDate\": \"2020-08-12T04:23:04 -10:00\",\r\n    \"CommentTime\": \"2018-06-02T12:18:24 -10:00\",\r\n    \"CreatedBy\": \"Carson Cox\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Minim sunt do est quis qui adipisicing ex aliquip nulla mollit ipsum. Non occaecat occaecat veniam ipsum aliquip et. Consequat cupidatat consectetur ullamco Lorem sint culpa enim qui ad ad in quis.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c069e865ae915c999b\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Client Contact\",\r\n    \"EntityName\": \"brown\",\r\n    \"EntityNumber\": 9650,\r\n    \"CommentDate\": \"2017-11-02T03:49:37 -11:00\",\r\n    \"ClientName\": \"XYQAG\",\r\n    \"ClientNo\": 2495,\r\n    \"CandidateName\": \"Gibbs Kaufman\",\r\n    \"CandidateNo\": 4229,\r\n    \"ContactName\": \"Della Conrad\",\r\n    \"CreateDate\": \"2020-05-09T07:39:48 -10:00\",\r\n    \"CommentTime\": \"2016-08-03T06:24:03 -10:00\",\r\n    \"CreatedBy\": \"Mayer Baird\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Deserunt proident officia ex sunt esse non adipisicing velit et consequat Lorem sunt laboris nisi. Amet ea non esse dolor enim laboris aliqua minim officia sit commodo aliqua in pariatur. Nulla mollit exercitation sint anim qui id exercitation esse voluptate cupidatat ea dolor irure velit.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c058e4621c2882fd86\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"West\",\r\n    \"Office\": \"Auckland\",\r\n    \"CommentType\": \"Job Order\",\r\n    \"EntityName\": \"brown\",\r\n    \"EntityNumber\": 4538,\r\n    \"CommentDate\": \"2020-06-25T09:14:46 -10:00\",\r\n    \"ClientName\": \"DOGNOSIS\",\r\n    \"ClientNo\": 5470,\r\n    \"CandidateName\": \"Anita Maldonado\",\r\n    \"CandidateNo\": 4018,\r\n    \"ContactName\": \"Ophelia Dotson\",\r\n    \"CreateDate\": \"2016-10-22T03:55:37 -11:00\",\r\n    \"CommentTime\": \"2017-09-11T07:11:35 -10:00\",\r\n    \"CreatedBy\": \"Sofia Cleveland\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Sunt qui adipisicing veniam sunt eu sit consectetur deserunt dolor cupidatat nulla mollit. Proident ipsum officia dolor quis non exercitation. Reprehenderit aute elit eu anim. Irure aute nulla in nisi laboris velit incididunt eu fugiat. Aliquip ad culpa incididunt esse incididunt tempor id esse consectetur duis et. Eiusmod deserunt qui exercitation pariatur nisi id pariatur.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00d01fccbafc10717\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"IT\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Timesheet\",\r\n    \"EntityName\": \"brown\",\r\n    \"EntityNumber\": 8288,\r\n    \"CommentDate\": \"2017-08-04T04:45:22 -10:00\",\r\n    \"ClientName\": \"SKYPLEX\",\r\n    \"ClientNo\": 7025,\r\n    \"CandidateName\": \"Holloway Romero\",\r\n    \"CandidateNo\": 1303,\r\n    \"ContactName\": \"Corine Summers\",\r\n    \"CreateDate\": \"2019-08-01T09:47:43 -10:00\",\r\n    \"CommentTime\": \"2018-06-24T02:54:12 -10:00\",\r\n    \"CreatedBy\": \"Simmons Solomon\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Cupidatat adipisicing incididunt dolor eiusmod anim ex enim enim non veniam. Aute exercitation exercitation aliquip fugiat quis velit reprehenderit ad nulla fugiat dolor. Velit quis proident aliqua ipsum officia sit mollit dolor fugiat nisi. Consequat incididunt cillum culpa in mollit tempor proident amet ut pariatur ex. Veniam amet commodo eu consectetur sit velit occaecat occaecat aliqua. Eu laborum pariatur qui aliqua do quis aute consequat irure.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00c8eadd56d948a56\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"North\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Cost Centre\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 8335,\r\n    \"CommentDate\": \"2016-02-14T02:31:58 -11:00\",\r\n    \"ClientName\": \"ENORMO\",\r\n    \"ClientNo\": 6763,\r\n    \"CandidateName\": \"Blevins Roman\",\r\n    \"CandidateNo\": 3777,\r\n    \"ContactName\": \"Effie Butler\",\r\n    \"CreateDate\": \"2019-07-26T05:55:56 -10:00\",\r\n    \"CommentTime\": \"2019-11-15T07:48:30 -11:00\",\r\n    \"CreatedBy\": \"Bradford Mosley\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Ut non nisi labore commodo irure nisi eiusmod aute tempor eiusmod commodo occaecat in et. Nostrud excepteur eiusmod qui ipsum adipisicing culpa nisi quis labore. Aliquip nisi exercitation enim labore commodo quis veniam magna culpa irure ut amet. Enim quis aliqua labore amet. Eiusmod dolore voluptate ut tempor. Lorem amet nisi eiusmod reprehenderit incididunt minim sit dolore proident.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c042dd1c879cf65d8e\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Client\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 9439,\r\n    \"CommentDate\": \"2018-11-25T03:32:10 -11:00\",\r\n    \"ClientName\": \"MAROPTIC\",\r\n    \"ClientNo\": 3713,\r\n    \"CandidateName\": \"Wilcox Sweet\",\r\n    \"CandidateNo\": 5472,\r\n    \"ContactName\": \"Gonzales Little\",\r\n    \"CreateDate\": \"2018-07-17T01:43:17 -10:00\",\r\n    \"CommentTime\": \"2017-12-30T01:23:35 -11:00\",\r\n    \"CreatedBy\": \"Hattie Rasmussen\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Veniam dolore Lorem esse enim qui cupidatat duis excepteur cupidatat velit tempor elit. Ut aliquip eiusmod anim do amet ad labore magna culpa id occaecat excepteur. Elit laborum id commodo anim ipsum nostrud cillum sit nisi sint tempor deserunt proident.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c0d6418d710b3e1b4e\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Candidate\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 6368,\r\n    \"CommentDate\": \"2015-08-02T10:41:22 -10:00\",\r\n    \"ClientName\": \"GRAINSPOT\",\r\n    \"ClientNo\": 7625,\r\n    \"CandidateName\": \"Kelley Craig\",\r\n    \"CandidateNo\": 6757,\r\n    \"ContactName\": \"Kenya Pena\",\r\n    \"CreateDate\": \"2014-08-01T03:32:19 -10:00\",\r\n    \"CommentTime\": \"2017-09-30T12:31:23 -10:00\",\r\n    \"CreatedBy\": \"Bailey Griffith\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Aliqua cupidatat consectetur do excepteur proident ut non reprehenderit. Duis sint aute adipisicing ullamco dolore in ea Lorem incididunt consectetur nulla nostrud consectetur sint. Consequat tempor occaecat aliqua do excepteur aute incididunt ullamco. Adipisicing nisi sint amet velit excepteur nostrud deserunt ad do duis et officia occaecat consequat. Nisi id qui nisi elit incididunt consectetur eu labore fugiat et ex qui Lorem. Officia excepteur quis sint commodo eu nulla esse eiusmod dolore laboris in nisi est sunt. Elit laboris laborum minim amet sunt nulla dolore culpa fugiat sit excepteur.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00667ce1e967b5d33\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Timesheet\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 6181,\r\n    \"CommentDate\": \"2019-12-08T05:07:50 -11:00\",\r\n    \"ClientName\": \"EXOSPEED\",\r\n    \"ClientNo\": 9214,\r\n    \"CandidateName\": \"Corina Morin\",\r\n    \"CandidateNo\": 9597,\r\n    \"ContactName\": \"Dickerson Durham\",\r\n    \"CreateDate\": \"2018-04-02T02:24:24 -10:00\",\r\n    \"CommentTime\": \"2017-11-30T10:27:39 -11:00\",\r\n    \"CreatedBy\": \"Larsen Huber\",\r\n    \"StandardDescription\": \"Job Extension\",\r\n    \"Comment\": \"Ullamco pariatur quis sint aliquip ex nulla elit quis deserunt fugiat voluptate nostrud est. Laborum magna amet est veniam. Irure anim sit non tempor laboris. Dolor occaecat ut veniam veniam aliqua mollit ipsum qui. Sit Lorem excepteur nisi velit non velit duis amet mollit quis voluptate proident tempor ea.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c09ed8cc8c4ffa5b6f\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Auckland\",\r\n    \"CommentType\": \"Timesheet\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 6117,\r\n    \"CommentDate\": \"2017-07-30T09:13:22 -10:00\",\r\n    \"ClientName\": \"QUONK\",\r\n    \"ClientNo\": 1567,\r\n    \"CandidateName\": \"Lilly Ortega\",\r\n    \"CandidateNo\": 7595,\r\n    \"ContactName\": \"Doreen Wiley\",\r\n    \"CreateDate\": \"2019-05-20T08:35:49 -10:00\",\r\n    \"CommentTime\": \"2016-06-29T07:03:31 -10:00\",\r\n    \"CreatedBy\": \"Craig Mccoy\",\r\n    \"StandardDescription\": \"Job Extension\",\r\n    \"Comment\": \"Magna amet exercitation sit reprehenderit do aliquip occaecat ipsum nisi aute sunt anim. Duis pariatur aliqua laborum consectetur ad dolore irure laborum ad voluptate. Adipisicing Lorem sunt aute mollit laborum duis veniam occaecat nulla sunt ut ipsum.\\r\\n\"\r\n  }\r\n]"
+            },
             {
                 "name": "context",
                 "ctype": "miscellaneous",
@@ -384,14 +853,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Header.stories.ts",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -455,6 +916,26 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/stories/comment.ts": [
+                {
+                    "name": "columns",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/comment.ts",
+                    "type": "[]",
+                    "defaultValue": "[\r\n\"Country\",\r\n\"Brand\",\r\n\"Region\",\r\n\"Office\",\r\n\"CommentType\",\r\n\"EntityName\",\r\n\"EntityNumber\",\r\n\"CommentDate\",\r\n\"ClientName\",\r\n\"ClientNo\",\r\n\"CandidateName\",\r\n\"CandidateNo\",\r\n\"ContactName\",\r\n\"CreateDate\",\r\n\"CommentTime\",\r\n\"CreatedBy\",\r\n\"StandardDescription\",\r\n\"Comment\"]"
+                }
+            ],
+            "src/stories/comments-data.ts": [
+                {
+                    "name": "COMMENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/comments-data.ts",
+                    "type": "[]",
+                    "defaultValue": "[\r\n  {\r\n    \"Id\": \"5f6610c06576178ad5a4bd6a\",\r\n    \"Country\": \"Australia\",\r\n    \"Brand\": \"IT\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Client Contact\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 3943,\r\n    \"CommentDate\": \"2015-11-19T03:35:54 -11:00\",\r\n    \"ClientName\": \"ZIALACTIC\",\r\n    \"ClientNo\": 7772,\r\n    \"CandidateName\": \"Crawford Shepard\",\r\n    \"CandidateNo\": 1428,\r\n    \"ContactName\": \"Gomez Malone\",\r\n    \"CreateDate\": \"2016-12-14T06:21:05 -11:00\",\r\n    \"CommentTime\": \"2014-03-11T10:17:56 -11:00\",\r\n    \"CreatedBy\": \"Kristine Hickman\",\r\n    \"StandardDescription\": \"Job Extension\",\r\n    \"Comment\": \"Nisi est enim laborum ex cupidatat laborum sit occaecat. Ut velit aliqua et irure adipisicing nisi voluptate ad eiusmod. Laboris consectetur culpa duis sint.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00ea2ffc83a8f0d10\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Cost Centre\",\r\n    \"EntityName\": \"green\",\r\n    \"EntityNumber\": 9338,\r\n    \"CommentDate\": \"2014-04-14T06:13:48 -10:00\",\r\n    \"ClientName\": \"SULTRAXIN\",\r\n    \"ClientNo\": 4401,\r\n    \"CandidateName\": \"Alexis Guerrero\",\r\n    \"CandidateNo\": 2955,\r\n    \"ContactName\": \"Booker Buckner\",\r\n    \"CreateDate\": \"2020-05-14T02:27:42 -10:00\",\r\n    \"CommentTime\": \"2014-05-30T04:15:30 -10:00\",\r\n    \"CreatedBy\": \"Corrine Flynn\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Incididunt tempor ea irure culpa sint velit culpa sit occaecat. Excepteur dolore enim est consequat culpa non dolore minim tempor exercitation ea. Aute est occaecat ipsum ex anim adipisicing. Amet ut veniam consectetur elit consectetur aliqua ea non et dolor eiusmod. Adipisicing est et non nulla culpa. Ut sint nostrud nulla ullamco ea. Commodo est do enim incididunt excepteur laborum quis nulla amet.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c077e9263b84ee034f\",\r\n    \"Country\": \"Australia\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Client Contact\",\r\n    \"EntityName\": \"green\",\r\n    \"EntityNumber\": 8995,\r\n    \"CommentDate\": \"2019-02-16T10:55:55 -11:00\",\r\n    \"ClientName\": \"ZOMBOID\",\r\n    \"ClientNo\": 2557,\r\n    \"CandidateName\": \"Short Fields\",\r\n    \"CandidateNo\": 3823,\r\n    \"ContactName\": \"Daisy Sellers\",\r\n    \"CreateDate\": \"2019-04-08T02:42:59 -10:00\",\r\n    \"CommentTime\": \"2017-12-08T02:41:00 -11:00\",\r\n    \"CreatedBy\": \"Ellis May\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Laborum minim dolore duis adipisicing est velit cupidatat laborum commodo in. Amet mollit ad nostrud id velit proident anim laboris veniam. Do in anim esse consectetur nisi magna velit id ipsum ea est voluptate occaecat ex. Duis adipisicing nulla quis consequat Lorem sit ut culpa consectetur fugiat. Nisi minim in reprehenderit culpa elit mollit irure irure ut irure duis eiusmod ex veniam.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c0a0a602994dcbc95c\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Auckland\",\r\n    \"CommentType\": \"Candidate\",\r\n    \"EntityName\": \"green\",\r\n    \"EntityNumber\": 6804,\r\n    \"CommentDate\": \"2019-05-10T04:03:52 -10:00\",\r\n    \"ClientName\": \"INJOY\",\r\n    \"ClientNo\": 1914,\r\n    \"CandidateName\": \"Sheila Edwards\",\r\n    \"CandidateNo\": 8398,\r\n    \"ContactName\": \"Cruz Byrd\",\r\n    \"CreateDate\": \"2020-08-12T04:23:04 -10:00\",\r\n    \"CommentTime\": \"2018-06-02T12:18:24 -10:00\",\r\n    \"CreatedBy\": \"Carson Cox\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Minim sunt do est quis qui adipisicing ex aliquip nulla mollit ipsum. Non occaecat occaecat veniam ipsum aliquip et. Consequat cupidatat consectetur ullamco Lorem sint culpa enim qui ad ad in quis.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c069e865ae915c999b\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Client Contact\",\r\n    \"EntityName\": \"brown\",\r\n    \"EntityNumber\": 9650,\r\n    \"CommentDate\": \"2017-11-02T03:49:37 -11:00\",\r\n    \"ClientName\": \"XYQAG\",\r\n    \"ClientNo\": 2495,\r\n    \"CandidateName\": \"Gibbs Kaufman\",\r\n    \"CandidateNo\": 4229,\r\n    \"ContactName\": \"Della Conrad\",\r\n    \"CreateDate\": \"2020-05-09T07:39:48 -10:00\",\r\n    \"CommentTime\": \"2016-08-03T06:24:03 -10:00\",\r\n    \"CreatedBy\": \"Mayer Baird\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Deserunt proident officia ex sunt esse non adipisicing velit et consequat Lorem sunt laboris nisi. Amet ea non esse dolor enim laboris aliqua minim officia sit commodo aliqua in pariatur. Nulla mollit exercitation sint anim qui id exercitation esse voluptate cupidatat ea dolor irure velit.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c058e4621c2882fd86\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"West\",\r\n    \"Office\": \"Auckland\",\r\n    \"CommentType\": \"Job Order\",\r\n    \"EntityName\": \"brown\",\r\n    \"EntityNumber\": 4538,\r\n    \"CommentDate\": \"2020-06-25T09:14:46 -10:00\",\r\n    \"ClientName\": \"DOGNOSIS\",\r\n    \"ClientNo\": 5470,\r\n    \"CandidateName\": \"Anita Maldonado\",\r\n    \"CandidateNo\": 4018,\r\n    \"ContactName\": \"Ophelia Dotson\",\r\n    \"CreateDate\": \"2016-10-22T03:55:37 -11:00\",\r\n    \"CommentTime\": \"2017-09-11T07:11:35 -10:00\",\r\n    \"CreatedBy\": \"Sofia Cleveland\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Sunt qui adipisicing veniam sunt eu sit consectetur deserunt dolor cupidatat nulla mollit. Proident ipsum officia dolor quis non exercitation. Reprehenderit aute elit eu anim. Irure aute nulla in nisi laboris velit incididunt eu fugiat. Aliquip ad culpa incididunt esse incididunt tempor id esse consectetur duis et. Eiusmod deserunt qui exercitation pariatur nisi id pariatur.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00d01fccbafc10717\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"IT\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Timesheet\",\r\n    \"EntityName\": \"brown\",\r\n    \"EntityNumber\": 8288,\r\n    \"CommentDate\": \"2017-08-04T04:45:22 -10:00\",\r\n    \"ClientName\": \"SKYPLEX\",\r\n    \"ClientNo\": 7025,\r\n    \"CandidateName\": \"Holloway Romero\",\r\n    \"CandidateNo\": 1303,\r\n    \"ContactName\": \"Corine Summers\",\r\n    \"CreateDate\": \"2019-08-01T09:47:43 -10:00\",\r\n    \"CommentTime\": \"2018-06-24T02:54:12 -10:00\",\r\n    \"CreatedBy\": \"Simmons Solomon\",\r\n    \"StandardDescription\": \"Complaint,\",\r\n    \"Comment\": \"Cupidatat adipisicing incididunt dolor eiusmod anim ex enim enim non veniam. Aute exercitation exercitation aliquip fugiat quis velit reprehenderit ad nulla fugiat dolor. Velit quis proident aliqua ipsum officia sit mollit dolor fugiat nisi. Consequat incididunt cillum culpa in mollit tempor proident amet ut pariatur ex. Veniam amet commodo eu consectetur sit velit occaecat occaecat aliqua. Eu laborum pariatur qui aliqua do quis aute consequat irure.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00c8eadd56d948a56\",\r\n    \"Country\": \"Singapore\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"North\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Cost Centre\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 8335,\r\n    \"CommentDate\": \"2016-02-14T02:31:58 -11:00\",\r\n    \"ClientName\": \"ENORMO\",\r\n    \"ClientNo\": 6763,\r\n    \"CandidateName\": \"Blevins Roman\",\r\n    \"CandidateNo\": 3777,\r\n    \"ContactName\": \"Effie Butler\",\r\n    \"CreateDate\": \"2019-07-26T05:55:56 -10:00\",\r\n    \"CommentTime\": \"2019-11-15T07:48:30 -11:00\",\r\n    \"CreatedBy\": \"Bradford Mosley\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Ut non nisi labore commodo irure nisi eiusmod aute tempor eiusmod commodo occaecat in et. Nostrud excepteur eiusmod qui ipsum adipisicing culpa nisi quis labore. Aliquip nisi exercitation enim labore commodo quis veniam magna culpa irure ut amet. Enim quis aliqua labore amet. Eiusmod dolore voluptate ut tempor. Lorem amet nisi eiusmod reprehenderit incididunt minim sit dolore proident.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c042dd1c879cf65d8e\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Melbourne\",\r\n    \"CommentType\": \"Client\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 9439,\r\n    \"CommentDate\": \"2018-11-25T03:32:10 -11:00\",\r\n    \"ClientName\": \"MAROPTIC\",\r\n    \"ClientNo\": 3713,\r\n    \"CandidateName\": \"Wilcox Sweet\",\r\n    \"CandidateNo\": 5472,\r\n    \"ContactName\": \"Gonzales Little\",\r\n    \"CreateDate\": \"2018-07-17T01:43:17 -10:00\",\r\n    \"CommentTime\": \"2017-12-30T01:23:35 -11:00\",\r\n    \"CreatedBy\": \"Hattie Rasmussen\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Veniam dolore Lorem esse enim qui cupidatat duis excepteur cupidatat velit tempor elit. Ut aliquip eiusmod anim do amet ad labore magna culpa id occaecat excepteur. Elit laborum id commodo anim ipsum nostrud cillum sit nisi sint tempor deserunt proident.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c0d6418d710b3e1b4e\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Candidate\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 6368,\r\n    \"CommentDate\": \"2015-08-02T10:41:22 -10:00\",\r\n    \"ClientName\": \"GRAINSPOT\",\r\n    \"ClientNo\": 7625,\r\n    \"CandidateName\": \"Kelley Craig\",\r\n    \"CandidateNo\": 6757,\r\n    \"ContactName\": \"Kenya Pena\",\r\n    \"CreateDate\": \"2014-08-01T03:32:19 -10:00\",\r\n    \"CommentTime\": \"2017-09-30T12:31:23 -10:00\",\r\n    \"CreatedBy\": \"Bailey Griffith\",\r\n    \"StandardDescription\": \"Sales Call\",\r\n    \"Comment\": \"Aliqua cupidatat consectetur do excepteur proident ut non reprehenderit. Duis sint aute adipisicing ullamco dolore in ea Lorem incididunt consectetur nulla nostrud consectetur sint. Consequat tempor occaecat aliqua do excepteur aute incididunt ullamco. Adipisicing nisi sint amet velit excepteur nostrud deserunt ad do duis et officia occaecat consequat. Nisi id qui nisi elit incididunt consectetur eu labore fugiat et ex qui Lorem. Officia excepteur quis sint commodo eu nulla esse eiusmod dolore laboris in nisi est sunt. Elit laboris laborum minim amet sunt nulla dolore culpa fugiat sit excepteur.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c00667ce1e967b5d33\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Industrial\",\r\n    \"Region\": \"South\",\r\n    \"Office\": \"Singapore\",\r\n    \"CommentType\": \"Timesheet\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 6181,\r\n    \"CommentDate\": \"2019-12-08T05:07:50 -11:00\",\r\n    \"ClientName\": \"EXOSPEED\",\r\n    \"ClientNo\": 9214,\r\n    \"CandidateName\": \"Corina Morin\",\r\n    \"CandidateNo\": 9597,\r\n    \"ContactName\": \"Dickerson Durham\",\r\n    \"CreateDate\": \"2018-04-02T02:24:24 -10:00\",\r\n    \"CommentTime\": \"2017-11-30T10:27:39 -11:00\",\r\n    \"CreatedBy\": \"Larsen Huber\",\r\n    \"StandardDescription\": \"Job Extension\",\r\n    \"Comment\": \"Ullamco pariatur quis sint aliquip ex nulla elit quis deserunt fugiat voluptate nostrud est. Laborum magna amet est veniam. Irure anim sit non tempor laboris. Dolor occaecat ut veniam veniam aliqua mollit ipsum qui. Sit Lorem excepteur nisi velit non velit duis amet mollit quis voluptate proident tempor ea.\\r\\n\"\r\n  },\r\n  {\r\n    \"Id\": \"5f6610c09ed8cc8c4ffa5b6f\",\r\n    \"Country\": \"New Zealand\",\r\n    \"Brand\": \"Logistics\",\r\n    \"Region\": \"East\",\r\n    \"Office\": \"Auckland\",\r\n    \"CommentType\": \"Timesheet\",\r\n    \"EntityName\": \"blue\",\r\n    \"EntityNumber\": 6117,\r\n    \"CommentDate\": \"2017-07-30T09:13:22 -10:00\",\r\n    \"ClientName\": \"QUONK\",\r\n    \"ClientNo\": 1567,\r\n    \"CandidateName\": \"Lilly Ortega\",\r\n    \"CandidateNo\": 7595,\r\n    \"ContactName\": \"Doreen Wiley\",\r\n    \"CreateDate\": \"2019-05-20T08:35:49 -10:00\",\r\n    \"CommentTime\": \"2016-06-29T07:03:31 -10:00\",\r\n    \"CreatedBy\": \"Craig Mccoy\",\r\n    \"StandardDescription\": \"Job Extension\",\r\n    \"Comment\": \"Magna amet exercitation sit reprehenderit do aliquip occaecat ipsum nisi aute sunt anim. Duis pariatur aliqua laborum consectetur ad dolore irure laborum ad voluptate. Adipisicing Lorem sunt aute mollit laborum duis veniam occaecat nulla sunt ut ipsum.\\r\\n\"\r\n  }\r\n]"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -570,14 +1051,6 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -593,7 +1066,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 3,
         "status": "low",
         "files": [
             {
@@ -729,16 +1202,6 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "LoggedOut",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Page.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -752,6 +1215,44 @@
                 "coveragePercent": 83,
                 "coverageCount": "5/6",
                 "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/comment.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IComment",
+                "coveragePercent": 0,
+                "coverageCount": "0/19",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/comment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "columns",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/comments-data.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COMMENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/comments-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CommentsListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/24",
+                "status": "low"
             },
             {
                 "filePath": "src/stories/header.component.ts",
