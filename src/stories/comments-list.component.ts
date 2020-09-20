@@ -1,24 +1,24 @@
 import { Component, ViewChild } from '@angular/core';
 import { IComment } from './comment';
 import { Table } from 'primeng/table';
-import { PrimeNGConfig } from 'primeng/api';
+import { ConfirmationService, PrimeNGConfig } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { FilterUtils } from 'primeng/utils';
 import { SelectItem } from 'primeng/api';
 import { COMMENTS } from './comments-data';
-import { cpuUsage } from 'process';
 
 @Component({
   selector: 'comments-list',
   templateUrl: './comments-list.component.html',
   styleUrls:["./comment-list.component.css"],
-  providers: [MessageService],
+  providers: [MessageService,ConfirmationService],
 })
 export class CommentsListComponent {
   comments: any;
   columns: any[];
   columnOptions: any[];
   selectedCols;
+  isCreateCommentDialogShown:boolean=false;
 
   selectedComments;
 
@@ -36,7 +36,7 @@ export class CommentsListComponent {
 
   @ViewChild('dt') table: Table;
 
-  constructor() {}
+  constructor(private confirmationService:ConfirmationService,private messageService:MessageService) {}
 
   ngOnInit() {
     // this.customerService.getCustomersLarge().then(customers => {
@@ -135,10 +135,23 @@ export class CommentsListComponent {
     ];
   }
   addNewComment(){
+    this.isCreateCommentDialogShown=true;
+
+  }
+  handleCreateCommentClose(){
+    this.isCreateCommentDialogShown=false;
 
   }
   deleteSelectedComment(){
+    this.confirmationService.confirm({
+      message: 'Are you sure you want to delete ?',
+      header: 'Confirm',
+      icon: 'pi pi-exclamation-triangle',
+      accept: () => {
 
+          this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
+      }
+  })
   }
   isColumnShown(name) {
     let selectedColumnCodes = this.selectedCols.map((col) => col.code);

@@ -1,22 +1,140 @@
-<div class="p-grid">
-  <div class="p-col">
-    <article>
-      <header>
+<p-dialog [(visible)]="isShown" [style]="{width: '1000px'}" header="Add Comment" [modal]="true" styleClass="p-fluid">
+  <ng-template pTemplate="content">
 
-      </header>
-      <div class="p-fluid">
-        <div class="p-field">
-            <label for="firstname1">Firstname</label>
-            <input id="firstname1" type="text" pInputText>
+    <div class="p-grid">
+      <div class="p-col" style="margin-right: 40px;">
+        <article>
+          <header>
+            Location
+          </header>
+          <div class="p-fluid">
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Country</label>
+                <div class="p-col-12 p-md-7">
+                    <input id="Country" type="text" pInputText>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="lastname" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Brand</label>
+                <div class="p-col-12 p-md-7">
+                    <input id="Brand" type="text" pInputText>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+              <label for="lastname" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Region</label>
+              <div class="p-col-12 p-md-7">
+                  <input id="Region" type="text" pInputText>
+              </div>
+          </div>
+          <div class="p-field p-grid">
+            <label for="lastname" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Office</label>
+            <div class="p-col-12 p-md-7">
+                <input id="Office" type="text" pInputText>
+            </div>
         </div>
-        <div class="p-field">
-            <label for="lastname1">Lastname</label>
-            <input id="lastname1" type="text" pInputText>
         </div>
+        </article>
+        <article>
+          <header>
+            Entity Details
+          </header>
+          <div class="p-fluid">
+            <div class="p-field p-grid">
+                <label for="EntityName" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Entity Name</label>
+                <div class="p-col-12 p-md-7">
+                    <input id="EntityName" type="text" pInputText>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="EntityNumber" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Entity Number</label>
+                <div class="p-col-12 p-md-7">
+                    <input id="EntityNumber" type="text" pInputText>
+                </div>
+            </div>
+        </div>
+        </article>
+        <article>
+          <header>
+            Client Details
+          </header>
+          <div class="p-fluid">
+            <div class="p-field p-grid">
+                <label for="ClientName" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Client Name</label>
+                <div class="p-col-12 p-md-7">
+                    <input id="ClientName" type="text" pInputText>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="ClientNo" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Client No</label>
+                <div class="p-col-12 p-md-7">
+                    <input id="ClientNo" type="text" pInputText>
+                </div>
+            </div>
+        </div>
+        </article>
+
+
+      </div>
+      <div class="p-col">
+      <article>
+        <header>
+          Candidate Details
+        </header>
+        <div class="p-fluid">
+          <div class="p-field p-grid">
+              <label for="firstname" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Candidate Name</label>
+              <div class="p-col-12 p-md-7">
+                  <input id="Country" type="text" pInputText>
+              </div>
+          </div>
+          <div class="p-field p-grid">
+              <label for="lastname" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Candidate No</label>
+              <div class="p-col-12 p-md-7">
+                  <input id="Brand" type="text" pInputText>
+              </div>
+          </div>
+          <div class="p-field p-grid">
+            <label for="lastname" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">ContactName</label>
+            <div class="p-col-12 p-md-7">
+                <input id="Region" type="text" pInputText>
+            </div>
+        </div>
+      </div>
+      </article>
+
+      <article>
+        <header>
+          Comment Details
+        </header>
+        <div class="p-fluid">
+          <div class="p-field p-grid">
+              <label for="CommentType" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Comment Type</label>
+              <div class="p-col-12 p-md-7">
+                  <input id="CommentType" type="text" pInputText>
+              </div>
+          </div>
+          <div class="p-field p-grid">
+              <label for="StandardDescription" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0"> Standard Description</label>
+              <div class="p-col-12 p-md-7">
+                  <input id="StandardDescription" type="text" pInputText>
+              </div>
+          </div>
+          <div class="p-field p-grid">
+            <label for="Comment" class="p-col-12 p-mb-2 p-md-3 p-mb-md-0">Comment</label>
+            <textarea pInputTextarea></textarea>
+
+        </div>
+      </div>
+      </article>
     </div>
-    </article>
-  </div>
-  <div class="p-col">2</div>
+    </div>
 
-</div>
+
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+      <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+      <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text" (click)="hideDialog()"></button>
+  </ng-template>
+</p-dialog>
 

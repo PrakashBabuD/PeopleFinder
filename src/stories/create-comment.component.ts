@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
   selector: 'create-comment',
@@ -7,5 +7,10 @@ import { Component } from "@angular/core";
 })
 
 export class CreateCommentComponent{
+@Input() isShown;
+@Output() handleCreateCommentClose = new EventEmitter();
 
+hideDialog(){
+  this.handleCreateCommentClose.emit();
+}
 }

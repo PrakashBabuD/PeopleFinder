@@ -5,11 +5,14 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   template: `<header>
     <div class="wrapper">
       <div>
+      <i class="pi pi-briefcase" style="font-size: 2rem"></i>
 
-        <h1>Job Portal</h1>
+        <h1>Recruitment CRM </h1>
 
       </div>
       <div>
+      <button pButton type="button" class=" p-button-rounded p-button-outlined" label="Logout">  </button>
+
         <storybook-button
           *ngIf="user"
           size="small"

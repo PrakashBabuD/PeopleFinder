@@ -1,12 +1,14 @@
 <p-toolbar styleClass="p-mb-4">
   <ng-template pTemplate="left">
       <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success p-mr-2" (click)="addNewComment();"></button>
-      <button pButton pRipple [label]="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedComment()" [disabled]="!selectedProducts || !selectedProducts.length"></button>
+      <button pButton pRipple [label]="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedComment()" [disabled]="!selectedComments || !selectedComments.length"></button>
   </ng-template>
 
 
 </p-toolbar>
 
+<create-comment [isShown]="isCreateCommentDialogShown" (handleCreateCommentClose)="handleCreateCommentClose()"></create-comment>
+<p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>
 <p-table
   #dt
   [value]="comments"
@@ -27,7 +29,6 @@
     <div class="p-d-flex">
       <button type="button" pButton pRipple icon="pi pi-file-o" (click)="dt.exportCSV()" class="p-mr-2" pTooltip="CSV" tooltipPosition="bottom"></button>
       <button pButton type="button" icon="pi pi-table" class="p-ml-auto"  (click)="colSelections.toggle($event);"></button>
-      <!-- <i class="pi pi-table  p-ml-auto"  ></i> -->
       <p-overlayPanel styleClass="sidebar-popup-sub-menu" #colSelections [dismissable]="true" [showCloseIcon]="true"
       appendTo="body">
       <p-listbox [listStyle]="{'max-height':'250px'}" [style]="{'width':'15rem'}" [options]="columnOptions" [(ngModel)]="selectedCols" (onChange)="selectedChanged($event)"

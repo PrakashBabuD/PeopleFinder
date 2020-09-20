@@ -29,9 +29,8 @@ import {InputTextModule} from 'primeng/inputtext';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 import {ListboxModule} from 'primeng/listbox';
 import {ToolbarModule} from 'primeng/toolbar';
-
-
-
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
 
 
 import * as HeaderStories from './Header.stories';
@@ -58,6 +57,8 @@ export default {
         OverlayPanelModule,
         ListboxModule,
         ToolbarModule,
+        InputTextareaModule,
+        ConfirmDialogModule,
         HttpClientModule,
         FormsModule]
     }),
