@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
       <div>
       <i class="pi pi-briefcase" style="font-size: 2rem"></i>
 
-        <h1>Recruitment CRM </h1>
+        <h1>People Finder </h1>
 
       </div>
       <div>

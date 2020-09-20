@@ -37,7 +37,7 @@ import * as HeaderStories from './Header.stories';
 import { CommentsListComponent } from './comments-list.component';
 
 export default {
-  title: 'Job Portal Pages/ Cadidate Records',
+  title: 'People Finder Pages/ Comments',
   component: Header,
   decorators: [
     moduleMetadata({
